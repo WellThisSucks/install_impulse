@@ -5,6 +5,7 @@ GREEN='\033[0;32m'
 ST='\033[0m '
 
 #Установка
+cd
 apt update
 apt install python
 apt install python2
