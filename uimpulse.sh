@@ -8,8 +8,6 @@ ST='\033[0m '
 apt update
 apt install python
 apt install python2
-apt install python3
-apt install python3-pip
 apt install git
 cd
 git clone https://github.com/LimerBoy/impulse
