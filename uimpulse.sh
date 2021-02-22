@@ -1,4 +1,4 @@
-!/data/data/com.termux/files/usr/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 
 #Цвета
 RED='\033[0;31m'
@@ -32,3 +32,4 @@ fi
 
 if [ "$impulse" = "нет" ]; then
 echo -e "$REDРаз ты выбрал (нет) то ты наверное умеешь пользоваться данной утилитой ;) $ST"
+fi
