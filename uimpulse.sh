@@ -17,9 +17,11 @@ echo -e "$REDХочешь использовать impulse одной коман
 read impulse
 if [ "$impulse" = "да" ]; then
 git clone https://github.com/WellThisSucks/impulsev2
-cd impulsev2
-mv impulse ../../usr/bin
 cd
+cd impulsev2
+mv impulse ~/
+cd
+mv impulse ../usr/bin
 cd ../usr/bin
 chmod 755 impulse
 cd
