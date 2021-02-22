@@ -1,28 +1,34 @@
-#!/data/data/com.termux/files/usr/bin/bash
+!/data/data/com.termux/files/usr/bin/bash
 
+#Цвета
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 ST='\033[0m '
 
 #Установка
-cd
 apt update
-apt install python
-apt install python2
-apt install git
-cd
+apt upgrade -y
+apt install python -y
+apt install python2 -y
+apt install git -y
 git clone https://github.com/LimerBoy/impulse
 cd impulse
-pip3 install -r requirements.txt
+pip install -r requirements.txt
+cd
 echo -e "$REDХочешь использовать impulse одной командой:да/нет"
 read impulse
+
 if [ "$impulse" = "да" ]; then
+
 git clone https://github.com/WellThisSucks/impulsev2
-echo -e "$GREENИспользование : просто в любой директории водишь команду (impulse), а там дальше всё интуинтивно понятно$ST "
+cd impulsev2
+mv impulse ../../usr/bin
+cd
+cd ../usr/bin
+chmod 755 impulse
+cd
+echo -e "$GREENИспользование : просто в любой из директорий вводишь команду (impulse)$ST"
 fi
 
 if [ "$impulse" = "нет" ]; then
-echo -e "$REDРаз выбрал НЕТ значит ты наверное знаешь как пользоваться этой утилитой))$ST"
-fi
-
-rm -rf install_impulse
+echo -e "$REDРаз ты выбрал (нет) то ты наверное умеешь пользоваться данной утилитой ;) $ST"
