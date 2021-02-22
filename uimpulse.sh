@@ -33,3 +33,4 @@ if [ "$impulse" = "нет" ]; then
 echo -e "$REDРаз выбрал НЕТ значит ты наверное знаешь как пользоваться этой утилитой))$ST"
 fi
 
+rm -rf install_impulse
