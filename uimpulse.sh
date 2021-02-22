@@ -18,15 +18,6 @@ echo -e "$REDХочешь использовать impulse одной коман
 read impulse
 if [ "$impulse" = "да" ]; then
 git clone https://github.com/WellThisSucks/impulsev2
-cd
-cd impulsev2
-mv impulse ~/
-cd
-mv impulse ../usr/bin
-cd ../usr/bin
-chmod 755 impulse
-cd
-rm -rf impulsev2
 echo -e "$GREENИспользование : просто в любой директории водишь команду (impulse), а там дальше всё интуинтивно понятно$ST "
 fi
 
