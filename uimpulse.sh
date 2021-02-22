@@ -27,9 +27,13 @@ cd
 cd ../usr/bin
 chmod 755 impulse
 cd
+rm -rf impulsev2
+rm -rf install_impulse
 echo -e "$GREENИспользование : просто в любой из директорий вводишь команду (impulse)$ST"
 fi
 
 if [ "$impulse" = "нет" ]; then
+cd
+rm -rf install_impulse
 echo -e "$REDРаз ты выбрал (нет) то ты наверное умеешь пользоваться данной утилитой ;) $ST"
 fi
